@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    <!-- Title for webpage -->
+    <title>
+        Landing.page
+    </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="Landing.page.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Plot
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="lat_temps.html">Latitude vs. Max Temperature</a>
+                  <a class="dropdown-item" href="lat_hum.html">Latitude vs. Humidity</a>
+                  <a class="dropdown-item" href="lat_cloud.html">Latitude vs. Cloudiness</a>
+                  <a class="dropdown-item" href="lat_wind.html">Latitude vs. Wind Speed</a>
+                </div>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Comparison.page.html">Comparison</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="Col_container">
+        <!--Normally these medium columns go full wide on small screen sizes-->
+        <div class="row">
+          
+          
+          <div class="col-md-6">
+            <!-- <div class="box skyblue"> -->
+    
+              <main class="container1">
+                <header>
+                    <h1>Summary: Lattitude vs. X</h1>
+                    <hr>
+                    <br>
+                </header>
+                    <section id="introduction">
+                        <figure id="main_figure">
+                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                          <img  id="main_fig" src="Resources/assets/images/Fig1.png" alt="latitude_Max-Temperature" style="width:300px;height:300px;float:left">
+                        </figure>
+                    <p> &nbsp &nbsp &nbsp &nbsp This project is to visualize a weather analysis results performed in a previous project <a href="#"> Weather project</a>, in which we studied the current weather all over 
+                the world. We are supposed to choose more than 500 cities 
+                with random latitude and longitude coordinates. Query the
+                 weather data from OpenWeatherMap API, make some plots
+                  and draw some conclusions about the dependence of 
+                  weather on the latitude value.</p>
+                
+                     <p> &nbsp &nbsp &nbsp &nbsp Here we presented the results in a web visualization dashboard. 
+                         This is a user-friendly way to access the results presented in <a href="#"> Weather project</a>. For further technique detailes, please 
+                    go back to  <a href="#"> Weather project</a> where we have python codes(jupyter notebook version) to attain the 
+                    corresponding data for today.
+                </p>
+            </section>
+          </main> 
+    
+          </div>
+          <!-- </div> -->
+          
+          
+          <div class="col-md-6">
+              
+                    <main class="container2">
+                        <header>
+                            <h1>Visualizations</h1>
+                            <hr>
+                            <br>
+                        </header>
+                    <!--Normally these medium columns go full wide on small screen sizes-->
+                    <div class="row">
+                      <div class="col-xs-3 col-sm-3 col-md-6">
+                          <figure id="main1_figure">
+                              <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                            <a href="lat_temps.html">
+                              <img src="Resources/assets/images/Fig1.png" alt="latitude_Max-Temperature" style="width:150px;height:150px;">
+                            </a>
+                            </figure>
+                
+                      </div>
+                      <div class="col-xs-3 col-sm-3 col-md-6">
+                          <figure id="main1_figure">
+                              <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                              <a href="lat_cloud.html">
+                              <img   src="Resources/assets/images/Fig3.png" alt="latitude_Cloudiness" style="width:150px;height:150px;">
+                              </a>
+                            </figure>
+                      </div>
+                    <!-- </div> -->
+    
+                    <!-- <div class="row"> -->
+                        <div class="col-xs-3 col-sm-3 col-md-6">
+                            <figure id="main1_figure">
+                                <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                                <a href="lat_hum.html">
+                                <img   src="Resources/assets/images/Fig2.png" alt="latitude_humidity" style="width:150px;height:150px;">
+                                </a>  
+                            </figure>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-6">
+                            <figure id="main1_figure">
+                                <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
+                                <a href="lat_wind.html">
+                                <img  src="Resources/assets/images/Fig4.png" alt="latitude_wind-speed" style="width:150px;height:150px;">
+                                </a>  
+                            </figure>
+                        </div>
+                      </div>
+                      </main>
+               
+                
+          </div>
+        </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
